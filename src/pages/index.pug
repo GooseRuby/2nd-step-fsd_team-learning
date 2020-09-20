@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang = "ru")
+  head
+      meta(charset="UTF-8")
+      title Главная
+      link(rel="stylesheet" href="@styles/test.scss")
+  body
+    h1 Добро пожаловать
+    p
+      | Эта страница - меню. Используйте ссылки ниже, чтобы перейти к определённым страницам моего задания.
+      | Полезные ссылки находятся внизу страницы.
+
+    div(class="menu_container")
+      div(class="ui-kit_container")
+        h2 UI-Kit
+        a(class="gradient_button" href="UI-Kit/ui-kit.html") UI-Kit страница 1
+        a(style="margin-top: 10px;" class="gradient_button" href="UI-Kit/ui-kit2.html") UI-Kit страница 2
+        a(style="margin-top: 10px;" class="gradient_button" href="UI-Kit/ui-kit3.html") UI-Kit страница 3
+        a(style="margin-top: 10px;" class="gradient_button_disable") UI-Kit страница 4
+
+      div(class="site_container")
+        h2 Страницы сайта
+        a(class="gradient_button_disable") Главная страница
+        a(style="margin-top: 10px;" class="gradient_button_disable") Поиск номера
+        a(style="margin-top: 10px;" class="gradient_button_disable") Страница номера
+        a(style="margin-top: 10px;" class="gradient_button_disable") Регистрация
+
+    footer
+      div(class="footer_container")
+        a(href="https://github.com/GooseRuby/fsd_team-learning") GitHub
+        a(href="https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task") Figma
+        a(href="https://vk.com/gooslink") Вконтакте автора
