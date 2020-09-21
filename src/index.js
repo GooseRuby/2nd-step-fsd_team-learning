@@ -1,4 +1,5 @@
-import './styles/test.scss'
+import '@styles/styles.scss'
+import '@styles/control_pad.scss'
 //import Post from './Post'
 //import * as $ from 'jquery'
 
