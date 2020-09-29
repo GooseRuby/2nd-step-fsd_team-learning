@@ -1,5 +1,5 @@
 mixin button_gradient(source, name)
-  a(class="button_gradient" href= source)= name
+  a(style!= attributes.style class="button_gradient" href= source)= name
 
 mixin button_gradient-disable(name)
-  a(class="button_gradient-disable")= name
+  a(style!= attributes.style class="button_gradient disable")= name

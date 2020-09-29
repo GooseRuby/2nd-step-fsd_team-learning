@@ -8,9 +8,136 @@
   font-family: "Montserrat";
   src: url(3cd786652b8a2e9d41f210cb1a527ff6.ttf) format("truetype");
 }
+.button_gradient {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 21px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button_gradient:hover {
+  opacity: 0.5;
+}
+.button_gradient:active {
+  opacity: 1;
+}
+.button_gradient.disable {
+  cursor: default;
+  background: gray;
+  opacity: 30%;
+}
+
+/*.gradient_a {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #BC9CFF;
+}
+
+.gradient_a:active {
+  background: rgba(31, 32, 65, 0.5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.pay_button, .reg_button {
+  position: relative;
+  height: 44px;
+  width: 320px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: 0px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: #FFFFFF;
+}
+
+.pay_button {
+    margin-top: 30px;
+}
+
+.reg_button {
+  margin-top: 10px;
+}
+
+.pay_button img, .reg_button img {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+
+.pay_button:active {
+  opacity: 0.5;
+}*/
 body {
   color: rgba(31, 32, 65, 0.75);
   margin: 140px;
+}
+
+.menu_container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.ui-kit_container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.site_container {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+footer {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 140px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 120px;
+  background-color: #dedede;
+}
+
+.footer_container {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+.footer_container a {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footer_container a:hover {
+  opacity: 50%;
 }
 
 /*текст*/
