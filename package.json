@@ -25,6 +25,7 @@
   "homepage": "https://github.com/GooseRuby/2nd-step-fsd_team-learning#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.1",
     "css-loader": "^4.3.0",
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.4.1",

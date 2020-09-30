@@ -1,5 +1,7 @@
 import '@styles/styles.scss'
 import '@styles/control_pad.scss'
+
+//импорт svg
 //import Post from './Post'
 //import * as $ from 'jquery'
 
