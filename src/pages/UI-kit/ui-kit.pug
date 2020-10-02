@@ -3,9 +3,6 @@ html(lang = "ru")
   head
     meta(charset="UTF-8")
     title UI-Kit 1
-    style
-      include /styles/ui-kit_css/styles.scss
-    //- с атом какой то баг, этот коммент чисто чтоб его исправить
   body
     include /assets/elements/buttons.pug
     include /assets/elements/control_pad.pug
@@ -13,50 +10,35 @@ html(lang = "ru")
     mixin colorrectangle(color, text1, text2)
       div(class="uk1_color-n-text")
         div(class="uk1_rectangle" class=color)
-        div(class="DarkShade-dsc")
-          p(style="font-size: 19px;")= text1
+        div(class="uk1_DarkShade-dsc")
+          p= text1
+          p= text2
     
-    div(class="uk1_container")
-      +colorrectangle('DarkShade100','Dark Shade 100%','#1F2041')
-
+    div(class="uk1_container1")
+      +colorrectangle('DarkShade100', "Dark Shade 100%", "#1F2041")
+      +colorrectangle('DarkShade75', "Dark Shade 75%", "#1F2041")
+      +colorrectangle('DarkShade50', "Dark Shade 50%", "#1F2041")
+      +colorrectangle('DarkShade25', "Dark Shade 25%", "#1F2041")
+      +colorrectangle('DarkShade05', "Dark Shade 5%", "#1F2041")
+      +colorrectangle('ColorPurple', "Purple", "#BC9CFF")
+      +colorrectangle('ColorGreen', "Green", "#6FCF97")
+      
+      div(class="uk1_container2")
+        table(border="0")
+          tr
+            td(class="uk1_fonts-title" style="font-size: 24px;") H1
+            td(class="uk1_fonts-prw") <h1>This one is the sub-section or widget title</h>
+          tr
+            td(class="uk1_fonts-title" style="font-size: 19px;") H2
+            td(class="uk1_fonts-prw") <h2>Next one is the item title inside widgets</h>
+          tr
+            td(class="uk1_fonts-title" style="font-size: 12px;") H3
+            td(class="uk1_fonts-prw") <h3>This is a label or CTA text</h>
+          tr
+            td(class="uk1_fonts-title" style="font-size: 14px;") Body
+            td(class="uk1_fonts-prw") <p>This is the body text which is used for most of the design, like paragraphs, lists, etc.</p>
+        
 //-
-
-    <div class="container1">
-      <div class="color-n-text">
-        <div class="rectangle DarkShade100"></div>
-        <div class="DarkShade-dsc"><p style="font-size: 19px;"><b>Dark Shade 100%</b><br>#1F2041</p></div>
-      </div>
-
-      <div class="color-n-text">
-        <div class="rectangle DarkShade75"></div>
-        <div class="DarkShade-dsc"><p  style="font-size: 19px;"><b>Dark Shade 75%</b><br>#1F2041</p></div>
-      </div>
-
-      <div class="color-n-text">
-        <div class="rectangle DarkShade50"></div>
-        <div class="DarkShade-dsc"><p style="font-size: 19px;"><b>Dark Shade 50%</b><br>#1F2041</p></div>
-      </div>
-
-      <div class="color-n-text">
-        <div class="rectangle DarkShade25"></div>
-        <div class="DarkShade-dsc"><p style="font-size: 19px;"><b>Dark Shade 25%</b><br>#1F2041</p></div>
-      </div>
-
-      <div class="color-n-text">
-        <div class="rectangle DarkShade05"></div>
-        <div class="DarkShade-dsc"><p style="font-size: 19px;"><b>Dark Shade 5%</b><br>#1F2041</p></div>
-      </div>
-
-      <div class="color-n-text">
-        <div class="rectangle ColorGreen"></div>
-        <div class="DarkShade-dsc"><p style="font-size: 19px;"><b>Purple</b><br>#BC9CFF</p></div>
-      </div>
-
-      <div class="color-n-text">
-        <div class="rectangle ColorPurple"></div>
-        <div class="DarkShade-dsc"><p style="font-size: 19px;"><b>Green</b><br>#6FCF97</p></div>
-      </div>
-
       <div class="container2">
         <table border="0">
           <tr>

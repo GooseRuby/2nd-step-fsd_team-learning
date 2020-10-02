@@ -1,4 +1,4 @@
-.uk1-container {
+.uk1_container1 {
   position: absolute;
   left: 150px;
   top: 145px;
@@ -9,6 +9,7 @@
 .uk1_color-n-text {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .uk1_rectangle {
@@ -20,12 +21,18 @@
 
 .uk1_DarkShade-dsc {
   margin-left: 40px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 29px;
-  /* Dark 100% */
-  color: #1F2041;
+  p {
+    margin: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 29px;
+    /* Dark 100% */
+    color: #1F2041;
+    &:first-child {
+      font-weight: bold;
+    }
+  }
 }
 
 /*цвета*/
@@ -39,7 +46,7 @@
   background: $darkshade50;
 }
 .DarkShade25 {
-  background: $darkshade25);
+  background: $darkshade25;
 }
 .DarkShade05 {
   background: $darkshade05;
@@ -51,8 +58,9 @@
   background: $colorpurple;
 }
 
-/*
-.container2 {
+//ВТОРОЙ КОНТЕЙНЕР
+
+.uk1_container2 {
   position: absolute;
   left: 854px;
   display: flex;
@@ -60,14 +68,14 @@
   width: 370px;
 }
 
-.fonts-prw-cont {
+/*.fonts-prw-cont {
   display: flex;
   align-items: flex-start;
   width: 400px;
   margin-top: 50px;
-}
+}*/
 
-.fonts-title {
+.uk1_fonts-title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -81,8 +89,8 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
-.fonts-prw {
+.uk1_fonts-prw {
   margin: 0px;
   vertical-align: top;
     padding-bottom: 50px;
-}*/
+}

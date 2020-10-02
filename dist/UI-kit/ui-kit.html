@@ -3,108 +3,79 @@
   <head>
     <meta charset="UTF-8">
     <title>UI-Kit 1</title>
-    <style>.uk1-container {
-  position: absolute;
-  left: 150px;
-  top: 145px;
-  display: flex;
-  flex-direction: column;
-}
-
-.uk1_color-n-text {
-  display: flex;
-  align-items: center;
-}
-
-.uk1_rectangle {
-  width: 70px;
-  height: 70px;
-  /* Dark 100% */
-  border-radius: 6px;
-}
-
-.uk1_DarkShade-dsc {
-  margin-left: 40px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 29px;
-  /* Dark 100% */
-  color: #1F2041;
-}
-
-$darkshade100: #1F2041;
-
-/*цвета*/
-.DarkShade100 {
-  background: $darkshade100;
-}
-.DarkShade75 {
-  background: $darkshade75;
-}
-.DarkShade50 {
-  background: $darkshade50;
-}
-.DarkShade25 {
-  background: $darkshade25);
-}
-.DarkShade05 {
-  background: $darkshade05;
-}
-.ColorGreen {
-  background: $colorgreen;
-}
-.ColorPurple {
-  background: $colorpurple;
-}
-
-/*
-.container2 {
-  position: absolute;
-  left: 854px;
-  display: flex;
-  flex-direction: column;
-  width: 370px;
-}
-
-.fonts-prw-cont {
-  display: flex;
-  align-items: flex-start;
-  width: 400px;
-  margin-top: 50px;
-}
-
-.fonts-title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  text-align: right;
-  padding-right: 30px;
-  vertical-align: top;
-
-
-  text-align: right;
-
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.fonts-prw {
-  margin: 0px;
-  vertical-align: top;
-    padding-bottom: 50px;
-}*/
-
-    </style>
   <link href="../main.css" rel="stylesheet"></head>
   <body>
 <div class="control_pad"><a class="pad_home" href="../index.html" title="на главную"><i class="material-icons-round">home</i></a><a class="pad_back pad_disable"><img src="../res/vectors/arrow_forward.svg"></a><a class="pad_next" href="ui-kit2.html" title="ui-kit 2"><img src="../res/vectors/arrow_forward.svg"></a></div>
-    <div class="uk1_container">
+    <div class="uk1_container1">
           <div class="uk1_color-n-text">
             <div class="uk1_rectangle DarkShade100"></div>
-            <div class="DarkShade-dsc">
-              <p style="font-size: 19px;">Dark Shade 100%</p>
+            <div class="uk1_DarkShade-dsc">
+              <p>Dark Shade 100%</p>
+              <p>#1F2041</p>
             </div>
           </div>
+          <div class="uk1_color-n-text">
+            <div class="uk1_rectangle DarkShade75"></div>
+            <div class="uk1_DarkShade-dsc">
+              <p>Dark Shade 75%</p>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="uk1_color-n-text">
+            <div class="uk1_rectangle DarkShade50"></div>
+            <div class="uk1_DarkShade-dsc">
+              <p>Dark Shade 50%</p>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="uk1_color-n-text">
+            <div class="uk1_rectangle DarkShade25"></div>
+            <div class="uk1_DarkShade-dsc">
+              <p>Dark Shade 25%</p>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="uk1_color-n-text">
+            <div class="uk1_rectangle DarkShade05"></div>
+            <div class="uk1_DarkShade-dsc">
+              <p>Dark Shade 5%</p>
+              <p>#1F2041</p>
+            </div>
+          </div>
+          <div class="uk1_color-n-text">
+            <div class="uk1_rectangle ColorPurple"></div>
+            <div class="uk1_DarkShade-dsc">
+              <p>Purple</p>
+              <p>#BC9CFF</p>
+            </div>
+          </div>
+          <div class="uk1_color-n-text">
+            <div class="uk1_rectangle ColorGreen"></div>
+            <div class="uk1_DarkShade-dsc">
+              <p>Green</p>
+              <p>#6FCF97</p>
+            </div>
+          </div>
+      <div class="uk1_container2">
+        <table border="0">
+          <tr>
+            <td class="uk1_fonts-title" style="font-size: 24px;">H1</td>
+            <td class="uk1_fonts-prw"><h1>This one is the sub-section or widget title</h></td>
+          </tr>
+          <tr>
+            <td class="uk1_fonts-title" style="font-size: 19px;">H2</td>
+            <td class="uk1_fonts-prw"><h2>Next one is the item title inside widgets</h></td>
+          </tr>
+          <tr>
+            <td class="uk1_fonts-title" style="font-size: 12px;">H3</td>
+            <td class="uk1_fonts-prw"><h3>This is a label or CTA text</h></td>
+          </tr>
+          <tr>
+            <td class="uk1_fonts-title" style="font-size: 14px;">Body</td>
+            <td class="uk1_fonts-prw"><p>This is the body text which is used for most of the design, like paragraphs, lists, etc.</p></td>
+          </tr>
+        </table>
+      </div>
     </div>
   <script src="../main.21878c02ea26879f6f90.js"></script></body>
 </html>
