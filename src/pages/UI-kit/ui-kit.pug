@@ -3,18 +3,23 @@ html(lang = "ru")
   head
     meta(charset="UTF-8")
     title UI-Kit 1
+    style
+      include /styles/ui-kit_css/styles.scss
+    //- с атом какой то баг, этот коммент чисто чтоб его исправить
   body
-    include ../../assets/elements/buttons.pug
-    include ../../assets/elements/control_pad.pug
+    include /assets/elements/buttons.pug
+    include /assets/elements/control_pad.pug
     
-    h1 здрасти
+    mixin colorrectangle(color, text1, text2)
+      div(class="uk1_color-n-text")
+        div(class="uk1_rectangle" class=color)
+        div(class="DarkShade-dsc")
+          p(style="font-size: 19px;")= text1
+    
+    div(class="uk1_container")
+      +colorrectangle('DarkShade100','Dark Shade 100%','#1F2041')
 
 //-
-    <div class="control_pad">
-      <a class="pad_home" href="../index.html" title="на главную"><i class="material-icons-round">home</i></a>
-      <a class="pad_back pad_disable"><img src="./res/vectors/arrow_forward.svg"></a>
-      <a class="pad_next" href="ui-kit2.html" title="ui-kit 2"><img src="./res/vectors/arrow_forward.svg"></a>
-    </div>
 
     <div class="container1">
       <div class="color-n-text">
