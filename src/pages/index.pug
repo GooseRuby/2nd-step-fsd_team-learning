@@ -6,21 +6,21 @@ html(lang = "ru")
   body
     include /assets/elements/buttons.pug
     
-    h1 Добро пожаловать
-    p
+    h1(style="margin: 16px 0") Добро пожаловать
+    p(style="margin: 16px 0")
       | Эта страница - меню. Используйте ссылки ниже, чтобы перейти к определённым страницам моего задания.<br>
       | Полезные ссылки находятся внизу страницы.
 
     div(class="menu_container")
       div(class="ui-kit_container")
-        h2 UI-Kit
+        h2(style="margin: 16px 0") UI-Kit
         +button_gradient('UI-kit/ui-kit.html', 'UI-kit страница 1')
         +button_gradient('UI-kit/ui-kit2.html', 'UI-kit страница 2')(style="margin-top: 10px")
         +button_gradient('UI-kit/ui-kit3.html', 'UI-kit страница 3')(style="margin-top: 10px")
         +button_gradient-disable('UI-kit страница 4')(style="margin-top: 10px")
 
       div(class="site_container")
-        h2 Страницы сайта
+        h2(style="margin: 16px 0") Страницы сайта
         +button_gradient-disable('Главная страница')
         +button_gradient-disable('Поиск номера')(style="margin-top: 10px")
         +button_gradient-disable('Страница номера')(style="margin-top: 10px")
